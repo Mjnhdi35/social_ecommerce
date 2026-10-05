@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "start": "node dist/main.js",
-    "build": "tsc -p tsconfig.json",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "express": "^5.2.1"
   },
   "devDependencies": {
-    "@types/express": "^5"
+    "@types/express": "^5",
+    "typescript": "^7.0.2"
   }
 }

@@ -3,9 +3,14 @@
   "private": true,
   "packageManager": "yarn@4.18.1",
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "apps/*"
   ],
+  "scripts": {
+    "build": "yarn workspace @social-commerce/api build",
+    "dev": "yarn workspace @social-commerce/api dev",
+    "start": "yarn workspace @social-commerce/api start",
+    "typecheck": "yarn workspace @social-commerce/api typecheck"
+  },
   "devDependencies": {
     "typescript": "^7.0.2"
   }

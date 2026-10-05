@@ -11,6 +11,7 @@ __metadata:
   dependencies:
     "@types/express": "npm:^5"
     express: "npm:^5.2.1"
+    typescript: "npm:^7.0.2"
   languageName: unknown
   linkType: soft
 

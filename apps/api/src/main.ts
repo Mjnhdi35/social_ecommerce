@@ -1,6 +1,11 @@
-console.log("Hello, World!", {
-  name: "Social Commerce",
-  description:
-    "A social commerce platform that allows users to buy and sell products through social media channels.",
-  date: new Date().toISOString(),
+import express from "express";
+
+const app = express();
+
+app.get("/health", (_req, res) => {
+  res.json({ status: "ok" });
+});
+
+app.listen(3000, () => {
+  console.log("API listening on http://localhost:3000");
 });
