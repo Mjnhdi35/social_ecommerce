@@ -12,6 +12,7 @@
     "typecheck": "yarn workspace @social-commerce/api typecheck"
   },
   "devDependencies": {
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
 }

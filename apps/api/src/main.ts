@@ -1,11 +1,8 @@
-import express from "express";
+import { NestFactory } from '@nestjs/core';
+import { AppModule } from './app.module.js';
 
-const app = express();
-
-app.get("/health", (_req, res) => {
-  res.json({ status: "ok" });
-});
-
-app.listen(3000, () => {
-  console.log("API listening on http://localhost:3000");
-});
+async function bootstrap() {
+  const app = await NestFactory.create(AppModule);
+  await app.listen(process.env.PORT ?? 3000);
+}
+await bootstrap();
