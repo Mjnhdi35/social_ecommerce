@@ -5,4 +5,6 @@ export class CreateUserDto {
   firstName: string;
   @IsString()
   lastName: string;
+  @IsString()
+  username: string;
 }

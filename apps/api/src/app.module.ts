@@ -24,7 +24,7 @@ import { env } from './config/env.js';
 
       autoLoadEntities: true,
 
-      synchronize: true,
+      synchronize: false,
     }),
     UsersModule,
     AuthModule,
