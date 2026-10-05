@@ -15,15 +15,12 @@ import { env } from './config/env.js';
     }),
     TypeOrmModule.forRoot({
       type: 'postgres',
-
       host: env.DATABASE_HOST,
       port: env.DATABASE_PORT,
       username: env.DATABASE_USER,
       password: env.DATABASE_PASSWORD,
       database: env.DATABASE_NAME,
-
       autoLoadEntities: true,
-
       synchronize: false,
     }),
     UsersModule,
